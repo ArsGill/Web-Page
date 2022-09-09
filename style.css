@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/background.png);
+    background-position: center;
+    background-size:cover;
+    padding: 0px 7%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height:25%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 70px;
+    cursor:pointer;
+
+}
+.hamburger{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 60px;
+}
+
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    list-style: none;
+
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 60px;
+    transition: transform ease 0.5s;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: transform 0.5s;
+    }
+ 
+nav ul li a:hover{
+    color:gray;
+}    
+
+
+nav ul li:hover{
+    transform: translateY(3px);
+}
+
+.side{
+    height: 50%;
+    display:flex;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.col {
+    flex-basis: 50%;
+    padding-top: 40px;
+}
+
+h1 , p, a{
+    color : white;
+    padding: 7px;
+    
+ }
+
+.side h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+.side p{
+    font-size: 22px;
+    margin-left: 3px;
+}
+.side button{
+     cursor:pointer;
+     color: white;
+     position: relative;
+     margin-top: 20px;
+     padding: 5px 10px;
+     font-size: 20px;
+     background-color: rgba(20, 191, 214, 0.808);
+     border-style: none;
+     border-radius: 30px;
+     
+}
+
+.card{
+    position: relative;
+    width:160px;
+    height:200px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    margin: 10px 0px 5px 90px;
+    border-radius: 7px;
+    background-position: center;
+    background-size: cover;
+    cursor:pointer;
+    transition: transform 0.5s;
+
+}
+
+
+.card h5{
+    margin-left: 11px;
+
+}
+.card p{
+    font-size: small;
+}
+
+.card1{
+    background-image: url(images/pic-1.png);
+}
+
+.card2{
+    background-image: url(images/pic-2.png);
+}
+.card3{
+    background-image: url(images/pic-3.png);
+}
+.card4{
+    background-image: url(images/pic-4.png);
+}
+
+
+.card:hover{
+    transform: translateY(-10px);
+
+}
+
+
+/*middle part is starting from here*/
+
+.middle{
+     display: flex;
+     box-sizing: border-box;
+     position: absolute;
+     height: 80%;
+     width:80rem;
+     margin-top: 50px;
+     margin-left: 100px;
+
+}
+
+
+.block-1{
+    background-image: url(images/pic-5.jpg);
+    width: 30%;
+    height:100%;
+    background-position:center;
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: 10px 15px 20px rgba(0,0,0,0.3);
+    transition: transform 0.5s;
+}
+.block-1:hover{
+    transform: translateX(10px);
+}
+
+
+.block-2{
+    flex-basis: 40%;
+    display:inline-block;
+    padding-left: 70px;
+    padding-top: 50px;
+    margin-left: 100px;
+}
+
+.block-2 h1{
+    font-weight:500;
+    font-size: 50px;
+    color: black;
+    padding-left: 10px;
+}
+
+.block-2 p{
+    display:flex;
+    color: gray;
+    width:auto;
+    background-color: aqua;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
+
+/*starting block 3*/
+
+.block-3{
+    position: absolute;
+    flex-basis: 40%;
+    display:inline-block;
+    margin-top: 50%;
+    width: 40%;
+
+}
+
+.block-3 h1{
+    font-weight:500;
+    font-size: 50px;
+    color: black;
+    padding-left: 10px;
+}
+
+.block-3 p{
+    display:flex;
+    color:white;
+    width:auto;
+    background-color: lightslategray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
+
+.block-4{
+    background-image: url(images/pic-6.jpg);
+    position: absolute;
+    margin-top: 43%;
+    margin-left: 60%;
+    width: 30%;
+    height:100%;
+    background-position:center;
+    background-size: cover;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+    border-radius: 7px;
+    transition: transform 0.5s;
+}
+
+.block-4:hover{
+    transform: translateX(-10px);
+}
+
+
+/* Footer part */
+
+.bottom{
+    background-color: black;
+    position:absolute;
+    height:65%;
+    width:130%;
+    margin-top: 90%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footeritem{
+    margin: 30px 30px;
+    padding: 50px 75px;
+    height: 30%;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+
+
+.footeritem h1{
+    font-size: 20px;
+}
+
+.footeritem a{
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.footeritem li{
+   padding:5px 0px;
+   transition: transform ease 0.5s;
+}
+
+.footeritem li:hover{
+   
+    transform: translateX(5px);
+
+}
+
+
+/*social icons*/
+
+.footeritem .socialicons{
+    display:inline-block;
+}
+
+.footeritem .socialicons a{
+    justify-content: space-between;
+    display: inline-block;
+    width:20px;
+    height:20px;
+    margin: 10px 10px 10px 0;
+    background-color: gray;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    transition: all ease 0.9s;
+}
+
+.footeritem .socialicons a:hover{
+    color: black;
+    background-color: white;
+}
+
+.copyrights{
+    position:relative;
+    margin-top: 115%;
+    margin-left: 38%;
+    color: gray;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
